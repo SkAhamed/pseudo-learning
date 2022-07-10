@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        h1:hover {
+            color: blue;
+            background-color: blueviolet;
+            margin: 50px;
+            padding: 50px;
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .middle-person:focus {
+            color: red;
+            font-weight: 700;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        li:first-child {
+            color: pink;
+        }
+
+        li:last-child {
+            color: skyblue;
+        }
+
+        li:nth-child(2n) {
+            color: rgb(52, 153, 119);
+        }
+
+        li:nth-child(2n+1) {
+            background-color: silver;
+        }
+
+        h3::before {
+            content: "Hello,";
+            font-size: 25px;
+        }
+
+        .special::after {
+            content: "Bye";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is normal</h1>
+    <input type="text">
+    <input class="middle-person" type="text">
+    <input type="text">
+    <br>
+    <a href="https://www.youtube.com/">youtube</a>
+    <a href="https://www.underconsideration.com/brandnew/archives/complete">never visited</a>
+    <a href="https://web.programming-hero.com/">programing hero</a>
+    <br>
+    <h3>middle size-1</h3>
+    <h3 class="special">middle size-2</h3>
+    <h3>middle size-3</h3>
+    <h3 class="special">middle size-4</h3>
+    <h3>middle size-5</h3>
+    <h3 class="special">middle size-6</h3>
+    <ol>
+        <li>sheakh</li>
+        <li>ahmed</li>
+        <li>zobaer</li>
+        <li>shawon</li>
+        <li>sajs</li>
+        <li>emperor</li>
+    </ol>
+</body>
+
+</html>
